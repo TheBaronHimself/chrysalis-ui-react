@@ -148,7 +148,6 @@ p {
 
 .selected {
   border-left: 5px solid var(--feature);
-  animation: fadeEffect 1s;
 }
 
 .title {
@@ -163,21 +162,6 @@ p {
   font-size: 1.3em;
 }
 
-.tabcontent {
-  animation: fadeEffect 1s;
-  /* Fading effect takes 1 second */
-}
-
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 .tab:hover {
   background: rgba(0, 0, 0, 0.2);
 }
