@@ -3,6 +3,10 @@
   flex-direction: column;
   border-radius: var(--window-radius) 0 0 var(--window-radius);
   background: rgba(0, 0, 0, 0.2);
+
+  &.selected {
+    border-left: 5px solid var(--feature);
+  }
 }
 
 .tabBar > * {
@@ -10,29 +14,26 @@
   display: grid;
   justify-content: center;
   align-content: center;
-}
 
-.tabBar > *:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
+  &.item {
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    img {
+      height: 30px;
+    }
+  }
 
-.logo > .symbol {
-  height: 40px;
-}
+  &.logo {
+    background: rgb(26, 31, 37);
+    border-radius: var(--window-radius) 0 0 0;
 
-.symbol {
-  height: 30px;
-}
+    display: grid;
+    align-content: center;
+    justify-content: center;
 
-.logo {
-  background: rgb(26, 31, 37);
-  border-radius: var(--window-radius) 0 0 0;
-
-  display: grid;
-  align-content: center;
-  justify-content: center;
-}
-
-.selected {
-  border-left: 5px solid var(--feature);
+    img {
+      height: 40px;
+    }
+  }
 }
