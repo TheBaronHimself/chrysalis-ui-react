@@ -10,7 +10,7 @@ export class TabButton extends Component {
     return (
       <div className="item" onClick={() => this.props.activateTab(name)}>
         <img src={`img/${img}`} alt="" />
-        <div className={active} />
+        <div className={`overlay ${active}`} />
       </div>
     );
   }
