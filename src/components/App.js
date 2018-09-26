@@ -1,5 +1,6 @@
 import React from "react";
 import TabBar from "./TabBar";
+import Tab from "./Tab";
 
 class App extends React.Component {
   state = {
@@ -19,6 +20,7 @@ class App extends React.Component {
           activeTab={this.state.activeTab}
           activateTab={this.activateTab}
         />
+        <Tab />
       </div>
     );
   }
