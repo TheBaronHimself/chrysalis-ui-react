@@ -6,8 +6,11 @@
   border-radius: var(--window-radius) 0 0 var(--window-radius);
   background: rgba(0, 0, 0, 0.2);
 
-  > .active {
+  & .active {
+    position: fixed;
     border-left: 5px solid var(--feature);
+    opacity: 1;
+    height: 80px;
   }
 }
 

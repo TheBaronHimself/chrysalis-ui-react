@@ -8,9 +8,9 @@ export class TabButton extends Component {
 
     const active = isActive ? "active" : "";
     return (
-      <div className={`item ${active}`}>
       <div className="item" onClick={() => this.props.activateTab(name)}>
         <img src={`img/${img}`} alt="" />
+        <div className={active} />
       </div>
     );
   }
