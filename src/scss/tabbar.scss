@@ -7,7 +7,7 @@
   background: rgba(0, 0, 0, 0.2);
 
   .overlay {
-    position: fixed;
+    position: absolute;
     background: var(--feature);
     height: 80px;
     width: 5px;
