@@ -38,8 +38,6 @@ h6 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 0.8em;
-  font-weight: 300;
 }
 
 /* ---- */
@@ -55,14 +53,4 @@ p {
   background-position: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background: linear-gradient(to right, #29323c, #485563);
-}
-
-.tabcontent {
-  display: grid;
-  height: 500px;
-
-  grid-template-columns: 270px 1fr;
-  grid-template-rows: 80px repeat(5, 1fr);
-  /* background-image: url('img/background.jpg'); */
-  background-position: center;
 }
