@@ -3,7 +3,9 @@ import Dropdown from "react-dropdown";
 
 export class PluginPicker extends Component {
   render() {
-    const options = ["My Macro", "↳ New"];
+    const macroOptions = ["My Macro", "↳ New"];
+    const macroDefault = macroOptions[0];
+    const options = ["Macros", "Tap Dance"];
     const defaultOption = options[0];
     return (
       <div className="layer-controls">
@@ -11,9 +13,9 @@ export class PluginPicker extends Component {
         <div className="layer-select dp-menu macro-select">
           <p>Macro</p>
           <Dropdown
-            options={options}
+            options={macroOptions}
             onChange={this._onSelect}
-            value={defaultOption}
+            value={macroDefault}
             placeholder="Select an option"
           />
         </div>
