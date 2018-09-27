@@ -6,16 +6,13 @@ export class Tab extends Component {
       <div className="tab">
         <div className="top-bar">
           <div className="title">
-            <h1>Keymap Editor</h1>
-            <p>Configure your keymap</p>
+            <h1>{this.props.tabTitle}</h1>
+            <p>{this.props.tabDesc}</p>
           </div>
-          <div className="top-controls">
-            <h1>Top Controls</h1>
-          </div>
+          <div className="top-controls">{this.props.topControls}</div>
         </div>
-        <div className="tab-contents">
-          <h1>Tab Contents</h1>
-        </div>
+
+        <div className="tab-contents">{this.props.tabContents}</div>
       </div>
     );
   }

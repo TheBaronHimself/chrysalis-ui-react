@@ -27,10 +27,22 @@ export class TabBar extends Component {
           name="led"
         />
         <TabButton
-          image="ic_settings_white_24px.svg"
-          active={isActive("settings")}
+          image="ic_settings_input_composite_white_24px.svg"
+          active={isActive("plugins")}
           activateTab={this.props.activateTab}
-          name="settings"
+          name="plugins"
+        />
+        <TabButton
+          image="ic_update_white_24px.svg"
+          active={isActive("update")}
+          activateTab={this.props.activateTab}
+          name="update"
+        />
+        <TabButton
+          image="ic_import_export_white_24px.svg"
+          active={isActive("import-export")}
+          activateTab={this.props.activateTab}
+          name="import-export"
         />
       </div>
     );

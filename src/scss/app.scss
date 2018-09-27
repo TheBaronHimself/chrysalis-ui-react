@@ -3,16 +3,20 @@
 @import "./variables.scss";
 @import "./tabbar.scss";
 @import "./tab.scss";
+@import "./dropdown.scss";
+@import "./layer-controls.scss";
+@import "./led-editor.scss";
+@import "./keymap-editor.scss";
+@import "./plugin-picker.scss";
+@import "./import-export.scss";
+@import "./update.scss";
+@import "./plugins.scss";
 
 html {
   box-sizing: border-box;
   background: #232526;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #414345, #232526);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #414345, #232526);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* font-weight: 300; */
+  height: 100%;
 }
 
 *,
@@ -35,6 +39,17 @@ h5,
 h6 {
   font-family: "Noto Sans", sans-serif;
 }
+h1 {
+  color: var(--feature);
+}
+
+h2 {
+  color: var(--feature);
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  text-align: right;
+  text-transform: uppercase;
+}
 
 p {
   font-family: "Roboto", sans-serif;
@@ -45,12 +60,19 @@ p {
 .window {
   margin: 50px auto;
   border-radius: var(--window-radius);
-  height: 600px;
+  height: 470px;
   width: 1100px;
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 75px 1fr;
   grid-template-rows: 1fr;
   background-position: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background: linear-gradient(to right, #29323c, #485563);
+}
+
+.dp-menu {
+  p {
+    padding-bottom: 4px;
+    font-size: 0.8em;
+  }
 }
