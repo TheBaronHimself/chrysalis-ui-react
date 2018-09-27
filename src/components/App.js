@@ -11,7 +11,7 @@ import { KeymapEditor } from "./KeymapEditor";
 
 class App extends React.Component {
   state = {
-    activeTab: "plugins"
+    activeTab: "keymap"
   };
 
   activateTab = tab => {

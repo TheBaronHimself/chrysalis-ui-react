@@ -9,12 +9,12 @@ export class Update extends Component {
     return (
       <div className="firmware-updater">
         <div className="current-firmware dp-menu">
-          <p>Current firmware version</p>
+          <p>Current Firmware Version</p>
           <input type="text" defaultValue="2018-08-22--revision-002" />
         </div>
 
         <div className="firmware-selector dp-menu">
-          <p>Select Firmware file</p>
+          <p>Select Firmware File</p>
           <Dropdown
             options={options}
             onChange={this._onSelect}

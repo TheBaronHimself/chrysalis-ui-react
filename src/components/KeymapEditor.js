@@ -71,7 +71,7 @@ export class KeymapEditor extends Component {
               options={keyOptions}
               onChange={this._onSelect}
               value={keyDefault}
-              placeholder="Select an option"
+              placeholder="Select a key"
             />
           </div>
         </div>
